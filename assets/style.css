@@ -1,0 +1,82 @@
+body{
+    height:100%;
+    width:100%;
+    background-color:black;
+    margin:0rem;
+    color:white;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+h1{
+  font-size:50px;  
+  margin-left: 20px;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display:block;
+}
+.header nav {
+    float:right;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+    font-size:25px;
+    margin-right:40px;
+    margin-top:15px;
+
+}
+.header a{
+    text-decoration: none;
+    color:white;
+}
+li a:hover{
+color:teal;
+font-size:60px;
+}
+.about-me{
+text-align: center;
+}
+main{
+    margin-top:70px ;
+}
+.projectTitle{
+   margin-top:150px;
+   margin-bottom:0;
+   padding-bottom:0;
+}
+.fakework{
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+.projects .images {
+    width:40vmin;
+    height: 40vmin;
+    min-width:40vmin;
+    object-position:center;
+    object-fit:cover;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap:4vmin;
+    transform:translate(7.5%, 10%);
+}
+footer div{
+    float:right;
+}
+@media(min-width:600px){
+    .projects {
+        flex-direction:row;
+    }
+   .projects .images {
+        width:80vmin;
+    }
+}
